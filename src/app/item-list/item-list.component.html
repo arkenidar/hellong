@@ -1,0 +1,6 @@
+<button (click)="add()">add</button> <button (click)="remove()">remove</button>
+
+<div *ngFor="let item of items">
+    <app-item [itemData]="item"></app-item>
+</div>
+
