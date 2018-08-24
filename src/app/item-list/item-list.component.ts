@@ -7,7 +7,7 @@ import {Item} from '../item';
   styleUrls: ['./item-list.component.css']
 })
 export class ItemListComponent implements OnInit {
-  items: Item[] = [new Item('a', 'b'), new Item('c', 'd')];
+  items: Item[] = [];
   constructor() { }
   ngOnInit() {
   }
