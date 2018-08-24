@@ -1,4 +1,5 @@
-<button (click)="add()">add</button> <button (click)="remove()">remove</button>
+<button (click)="add()">add</button>
+<button (click)="remove()" [disabled]="items.length===0?'disabled':null">remove</button>
 
 <div *ngFor="let item of items">
     <app-item [itemData]="item"></app-item>
